@@ -10,4 +10,4 @@ class SignInPage {
     cy.get(this.signInButton).click();
   }
 }
-export default SignInPage;
+export default new SignInPage();

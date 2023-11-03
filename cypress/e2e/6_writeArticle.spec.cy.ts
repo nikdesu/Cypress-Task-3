@@ -1,18 +1,13 @@
 import { faker } from "@faker-js/faker";
-import HomePage from "./pages/home.page";
-import SignInPage from "./pages/signIn.page";
+import homePage from "./pages/home.page";
+import signInPage from "./pages/signIn.page";
 import credentials from "../fixtures/credentials.json";
-import UserPage from "./pages/user.page";
-import EditorPage from "./pages/editor.page";
+import userPage from "./pages/user.page";
+import editorPage from "./pages/editor.page";
 import endpoints from "../fixtures/endpoints.json";
-import ArticlePage from "./pages/article.page";
+import articlePage from "./pages/article.page";
 
 describe("Writing articles", () => {
-  const homePage = new HomePage();
-  const signInPage = new SignInPage();
-  const userPage = new UserPage();
-  const editorPage = new EditorPage();
-  const articlePage = new ArticlePage();
 
   it("Write article", () => {
     homePage.visit();

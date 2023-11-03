@@ -5,4 +5,4 @@ class ArticlePage {
     readonly articleBody = '[ng-bind-html="::$ctrl.article.body"]'
 }
 
-export default ArticlePage;
+export default new ArticlePage();

@@ -5,4 +5,4 @@ class UserPage {
   readonly favourButton = '[class="btn btn-sm btn-primary"]';
 }
 
-export default UserPage;
+export default new UserPage();

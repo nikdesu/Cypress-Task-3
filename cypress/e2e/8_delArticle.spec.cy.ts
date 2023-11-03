@@ -1,17 +1,12 @@
 import { faker } from "@faker-js/faker";
-import HomePage from "./pages/home.page";
-import SignInPage from "./pages/signIn.page";
+import homePage from "./pages/home.page";
+import signInPage from "./pages/signIn.page";
 import credentials from "../fixtures/credentials.json";
-import UserPage from "./pages/user.page";
-import EditorPage from "./pages/editor.page";
-import ArticlePage from "./pages/article.page";
+import userPage from "./pages/user.page";
+import editorPage from "./pages/editor.page";
+import articlePage from "./pages/article.page";
 
 describe("Deleting created article", () => {
-  const homePage = new HomePage();
-  const signInPage = new SignInPage();
-  const userPage = new UserPage();
-  const editorPage = new EditorPage();
-  const articlePage = new ArticlePage();
 
   it("Delete article", () => {
     homePage.visit();

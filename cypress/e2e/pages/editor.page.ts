@@ -11,4 +11,4 @@ class EditorPage {
   }
 }
 
-export default EditorPage;
+export default new EditorPage();

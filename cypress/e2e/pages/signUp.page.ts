@@ -11,4 +11,4 @@ class SignUpPage {
     cy.get(this.signUpButton).click();
   }
 }
-export default SignUpPage;
+export default new SignUpPage();

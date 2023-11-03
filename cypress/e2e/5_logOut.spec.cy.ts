@@ -1,14 +1,10 @@
-import HomePage from "./pages/home.page";
-import SignInPage from "./pages/signIn.page";
+import homePage from "./pages/home.page";
+import signInPage from "./pages/signIn.page";
 import credentials from "../fixtures/credentials.json";
-import UserPage from "./pages/user.page";
-import SettingsPage from "./pages/settings.page";
+import userPage from "./pages/user.page";
+import settingsPage from "./pages/settings.page";
 
 describe("Log out feature", () => {
-  const homePage = new HomePage();
-  const signInPage = new SignInPage();
-  const userPage = new UserPage();
-  const settingsPage = new SettingsPage();
 
   it("Log out", () => {
     homePage.visit();

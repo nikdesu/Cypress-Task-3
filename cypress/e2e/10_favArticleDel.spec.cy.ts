@@ -1,14 +1,9 @@
-import HomePage from "./pages/home.page";
-import SignInPage from "./pages/signIn.page";
+import homePage from "./pages/home.page";
+import signInPage from "./pages/signIn.page";
 import credentials from "../fixtures/credentials.json";
-import UserPage from "./pages/user.page";
-import endpoints from "../fixtures/endpoints.json";
+import userPage from "./pages/user.page";
 
 describe("Removing article from favourited articles", () => {
-  const homePage = new HomePage();
-  const signInPage = new SignInPage();
-  const userPage = new UserPage();
-
   it("Unfavour article", () => {
     homePage.visit();
     cy.get(homePage.signInButton).click();

@@ -1,10 +1,8 @@
 import { faker } from "@faker-js/faker";
-import HomePage from "./pages/home.page";
-import SignInPage from "./pages/signIn.page";
+import homePage from "./pages/home.page";
+import signInPage from "./pages/signIn.page";
 
 describe("Invalid sign up", () => {
-  const homePage = new HomePage();
-  const signInPage = new SignInPage();
 
   it("Sign in", () => {
     homePage.visit();
