@@ -7,7 +7,6 @@ import editorPage from "./pages/editor.page";
 import articlePage from "./pages/article.page";
 
 describe("Deleting created article", () => {
-
   it("Delete article", () => {
     homePage.visit();
     cy.get(homePage.signInButton).click();

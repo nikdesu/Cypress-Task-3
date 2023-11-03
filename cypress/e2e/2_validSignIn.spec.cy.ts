@@ -3,7 +3,6 @@ import signInPage from "./pages/signIn.page";
 import credentials from "../fixtures/credentials.json";
 
 describe("Valid sign up", () => {
-
   it("Sign in", () => {
     homePage.visit();
     cy.get(homePage.signInButton).click();

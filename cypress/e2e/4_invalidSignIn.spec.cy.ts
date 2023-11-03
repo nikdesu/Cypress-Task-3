@@ -3,7 +3,6 @@ import homePage from "./pages/home.page";
 import signInPage from "./pages/signIn.page";
 
 describe("Invalid sign up", () => {
-
   it("Sign in", () => {
     homePage.visit();
     cy.get(homePage.signInButton).click();

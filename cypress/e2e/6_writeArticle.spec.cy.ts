@@ -8,7 +8,6 @@ import endpoints from "../fixtures/endpoints.json";
 import articlePage from "./pages/article.page";
 
 describe("Writing articles", () => {
-
   it("Write article", () => {
     homePage.visit();
     cy.get(homePage.signInButton).click();

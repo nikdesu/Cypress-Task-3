@@ -5,7 +5,6 @@ import userPage from "./pages/user.page";
 import settingsPage from "./pages/settings.page";
 
 describe("Log out feature", () => {
-
   it("Log out", () => {
     homePage.visit();
     cy.get(homePage.signInButton).click();

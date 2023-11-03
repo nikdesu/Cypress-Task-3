@@ -5,7 +5,6 @@ import credentials from "../fixtures/credentials.json";
 import endpoints from "../fixtures/endpoints.json";
 
 describe("Invalid sign up", () => {
-
   it("Sign up", () => {
     homePage.visit();
     cy.get(homePage.signUpButton).click();
