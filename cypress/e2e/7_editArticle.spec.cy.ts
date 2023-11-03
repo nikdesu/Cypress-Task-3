@@ -7,9 +7,11 @@ import editorPage from "./pages/editor.page";
 import articlePage from "./pages/article.page";
 
 describe("Editing created article", () => {
-  const randTitle = faker.lorem.word();
-  const randAbout = faker.lorem.word();
-  const randBody = faker.lorem.word();
+  const randObj = {
+    title: faker.lorem.word(),
+    about: faker.lorem.word(),
+    body: faker.lorem.word()
+  }
 
   it("Edit article", () => {
     homePage.visit();
@@ -19,10 +21,10 @@ describe("Editing created article", () => {
     editorPage.writeArticle(faker.lorem.sentence(), faker.lorem.sentence(), faker.lorem.sentence());
     cy.get(editorPage.publishButton).click();
     cy.get(articlePage.editButton).eq(1).click();
-    editorPage.writeArticle(randTitle, randAbout, randBody);
+    editorPage.writeArticle(randObj.title, randObj.about, randObj.body);
     cy.get(editorPage.publishButton).click();
-    cy.get(articlePage.articleBody).should("contain", randBody);
-    cy.get(articlePage.articleTitle).should("contain", randTitle);
+    cy.get(articlePage.articleBody).should("contain", randObj.body);
+    cy.get(articlePage.articleTitle).should("contain", randObj.title);
     cy.get(articlePage.delButton).eq(1).click();
   });
 });
