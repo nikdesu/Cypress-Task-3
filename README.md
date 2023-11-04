@@ -45,7 +45,7 @@ Node.js: Install Node.js from https://nodejs.org/en
    ```bash
    cd cypress-typescript-tests
    ```
-3. Installing Playwright
+3. Installing Cypress
    ```bash
    npm install cypress --save-dev
    ```
