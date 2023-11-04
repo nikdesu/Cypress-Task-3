@@ -75,10 +75,8 @@ You can start writing your own tests in the tests directory. Follow the Cypress 
 
 <!-- TEST REPORTS -->
 ## Test reports 
-The HTML Reporter shows you a full report of your tests allowing you to filter the report by browsers, passed tests, failed tests, skipped tests and flaky tests. By default, the HTML report is opened automatically if some of the tests failed, otherwise you can open it with the following command.
-
+This will redirect the output of the npx cypress run command to a file named test-report.txt.
 ```bash
 npx cypress run > test-report.txt
 ```
-This will redirect the output of the npx cypress run command to a file named test-report.txt.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
