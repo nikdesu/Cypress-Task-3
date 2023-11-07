@@ -1,7 +1,0 @@
-{
-    "signUp": "/register",
-    "signIn": "/login",
-    "editor": "/editor",
-    "user_article": "/article",
-    "favourites": "/favorites"
-}
