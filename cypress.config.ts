@@ -1,10 +1,8 @@
 import { defineConfig } from "cypress";
 
 export default defineConfig({
-  projectId: 'wpbsxw',
+  projectId: "wpbsxw",
   e2e: {
-    setupNodeEvents(on, config) {
-      // implement node event listeners here
-    },
+    baseUrl: "https://demo.realworld.io/#/",
   },
 });
