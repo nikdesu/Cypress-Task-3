@@ -9,15 +9,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-
-      - name: Install Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: '14'
-
-      - name: Install Cypress and run tests
-        run: |
-          npm install cypress
-          npx cypress run --record --key 53cbd7a7-a44b-4b0b-8cdf-4cd4d51b40ee
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Cypress run
+        uses: cypress-io/github-action@v6
