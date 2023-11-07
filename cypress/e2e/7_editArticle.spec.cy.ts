@@ -10,8 +10,8 @@ describe("Editing created article", () => {
   const randObj = {
     title: faker.lorem.word(),
     about: faker.lorem.word(),
-    body: faker.lorem.word()
-  }
+    body: faker.lorem.word(),
+  };
 
   it("Edit article", () => {
     homePage.visit();
