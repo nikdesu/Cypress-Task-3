@@ -2,15 +2,14 @@ name: Cypress Tests
 
 on:
   push:
-    branches:
-      - main # Replace with your branch name
+    branches: [ main ]
 
 jobs:
-  cypress:
+  cypress-run:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v2
 
       - name: Install Node.js
@@ -18,11 +17,7 @@ jobs:
         with:
           node-version: '14'
 
-      - name: Install dependencies
-        run: npm install 
-        
-      - name: Run Cypress tests
-        run: npx cypress run
-
-      - name: Upload Cypress test results to Dashboard
-        run: npx cypress-dashboard upload --key ${{ 53cbd7a7-a44b-4b0b-8cdf-4cd4d51b40ee }} --parallel
+      - name: Install Cypress and run tests
+        run: |
+          npm install cypress
+          npx cypress run --record --key 53cbd7a7-a44b-4b0b-8cdf-4cd4d51b40ee
